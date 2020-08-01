@@ -7,9 +7,9 @@ export const ButtonStyled = styled.button`
   border-radius: 8px;
 
   width: ${({ buttonSize }) => {
-    if (buttonSize == 'large') {
+    if (buttonSize === 'large') {
       return '50%'
-    } else if (buttonSize == 'xlarge') {
+    } else if (buttonSize === 'xlarge') {
       return '75%'
     } else {
       return '25%'
