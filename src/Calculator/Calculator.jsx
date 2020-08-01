@@ -1,5 +1,5 @@
 import React from 'react';
-import { CalculatorStyled } from '../Calculator/CalculatorStyled';
+import { CalculatorStyled, ButtonsStyled } from '../Calculator/CalculatorStyled';
 import Button from '../Button/Button';
 import Display from '../Display/Display';
 
@@ -83,12 +83,14 @@ const Calculator = () => {
   return (
     <CalculatorStyled>
       <Display />
-      {BUTTONS.map(button => (
-        <Button 
-          buttonSize={button.size} 
-          title={button.display}
-        />
-      ))}
+      <ButtonsStyled>
+        {BUTTONS.map(button => (
+          <Button 
+            buttonSize={button.size} 
+            title={button.display}
+          />
+        ))}
+      </ButtonsStyled>
     </CalculatorStyled>
   );
 }

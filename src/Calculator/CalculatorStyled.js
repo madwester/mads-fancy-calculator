@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
-export const CalculatorStyled = styed.div`
-  display: flex;
-  flex-direction: row;
+export const CalculatorStyled = styled.div`
   background-color: pink;
   width: 400px;
   margin: 0 auto;
-  flex-wrap: wrap;
   height: 400px;
+`;
+
+export const ButtonsStyled = styled.div`
+  display: flex;
+  flex-wrap: wrap;
 `;

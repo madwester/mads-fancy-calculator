@@ -2,7 +2,9 @@ import React from 'react';
 import { DisplayStyled } from './DisplayStyled';
 const Display = () => {
   return (
-    <DisplayStyled></DisplayStyled>
+    <DisplayStyled>
+    111
+    </DisplayStyled>
   );
 }
 
