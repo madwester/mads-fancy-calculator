@@ -1,5 +1,7 @@
 import React from 'react';
+import { CalculatorStyled } from '../Calculator/CalculatorStyled';
 import Button from '../Button/Button';
+import Display from '../Display/Display';
 
 const buttonSize = {
   DEFAULT: 'default',
@@ -79,14 +81,15 @@ const BUTTONS = [{
 
 const Calculator = () => {
   return (
-    <div className="calculator">
+    <CalculatorStyled>
+      <Display />
       {BUTTONS.map(button => (
         <Button 
           buttonSize={button.size} 
           title={button.display}
         />
       ))}
-    </div>
+    </CalculatorStyled>
   );
 }
 
