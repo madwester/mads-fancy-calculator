@@ -1,10 +1,9 @@
 import React from 'react';
-import { DisplayStyled } from './DisplayStyled';
-const Display = () => {
+import { DisplayInputStyled } from './DisplayStyled';
+
+const Display = ({ displayText }) => {
   return (
-    <DisplayStyled>
-    111
-    </DisplayStyled>
+    <DisplayInputStyled value={displayText} />
   );
 }
 

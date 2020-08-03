@@ -1,18 +1,19 @@
 import styled from 'styled-components';
 
 export const ButtonStyled = styled.button`
-  width: 25%;
-  background-color: white;
+  background: white;
+  border: 1px solid #eee;
+  font-size: 22px;
+  height: 70px;
   padding: 20px;
-  border-radius: 8px;
 
-  width: ${({ buttonSize }) => {
+  grid-column: ${({ buttonSize }) => {
     if (buttonSize === 'large') {
-      return '50%'
+      return 'span 2'
     } else if (buttonSize === 'xlarge') {
-      return '75%'
+      return 'span 3'
     } else {
-      return '25%'
+      return 'span 1'
     };
   }}
 `;

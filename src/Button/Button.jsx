@@ -1,9 +1,9 @@
 import React from 'react';
 import { ButtonStyled } from './ButtonStyled';
 
-const Button = ({ buttonSize, title }) => {
+const Button = ({ buttonSize, onClick, title }) => {
   return (
-    <ButtonStyled buttonSize={buttonSize}>
+    <ButtonStyled buttonSize={buttonSize} onClick={onClick}>
       {title}
     </ButtonStyled>
   );
