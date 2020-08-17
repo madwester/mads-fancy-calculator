@@ -1,11 +1,14 @@
 import styled from 'styled-components';
+import fonts from '../fonts';
 
 export const ButtonStyled = styled.button`
   background: white;
   border: 1px solid #eee;
-  font-size: 22px;
+  font-size: 24px;
+  font-family: ${fonts.roboto};
   height: 70px;
   padding: 20px;
+  outline: none;
 
   grid-column: ${({ buttonSize }) => {
     if (buttonSize === 'large') {

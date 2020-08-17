@@ -1,9 +1,16 @@
 import React from 'react';
-import { DisplayInputStyled } from './DisplayStyled';
+import { DisplayStyled, TopStyled, BottomStyled } from './DisplayStyled';
 
-const Display = ({ displayText }) => {
+const Display = ({ currentOperand, prevOperand }) => {
   return (
-    <DisplayInputStyled value={displayText} />
+    <DisplayStyled>
+    <TopStyled>
+      {prevOperand}
+    </TopStyled>
+    <BottomStyled>
+      {currentOperand}
+    </BottomStyled>
+    </DisplayStyled>
   );
 }
 

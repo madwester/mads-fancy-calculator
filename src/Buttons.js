@@ -1,13 +1,14 @@
-const buttonSize = {
+export const buttonSize = {
   DEFAULT: 'default',
   LARGE: 'large',
   XLARGE: 'xlarge'
 }
 
-const buttonType = {
+export const buttonType = {
   CLEAR: 'clear',
   NUMBER: 'number',
-  UPDATE: 'UPDATE'
+  OPERATOR: 'operator',
+  PERIOD: 'period'
 }
 
 export const BUTTONS = [{
@@ -16,12 +17,12 @@ export const BUTTONS = [{
     size: buttonSize.LARGE
   },
   {
-    buttonType: buttonType.UPDATE,
+    buttonType: buttonType.OPERATOR,
     display: "%",
     size: buttonSize.DEFAULT
   },
   {
-    buttonType: buttonType.UPDATE,
+    buttonType: buttonType.OPERATOR,
     display: "/",
     size: buttonSize.DEFAULT
   },
@@ -41,8 +42,8 @@ export const BUTTONS = [{
     size: buttonSize.DEFAULT
   },
   {
-    buttonType: buttonType.NUMBER,
-    display: "x",
+    buttonType: buttonType.OPERATOR,
+    display: "*",
     size: buttonSize.DEFAULT
   },
   {
@@ -61,7 +62,7 @@ export const BUTTONS = [{
     size: buttonSize.DEFAULT
   },
   {
-    buttonType: buttonType.UPDATE,
+    buttonType: buttonType.OPERATOR,
     display: "-",
     size: buttonSize.DEFAULT
   },
@@ -81,17 +82,22 @@ export const BUTTONS = [{
     size: buttonSize.DEFAULT
   },
   {
-    buttonType: buttonType.UPDATE,
+    buttonType: buttonType.ADD,
     display: "+",
     size: buttonSize.DEFAULT
   },
   {
     buttonType: buttonType.NUMBER,
-    display: "0",
-    size: buttonSize.XLARGE
+    display: ".",
+    size: buttonSize.DEFAULT
   },
   {
-    buttonType: buttonType.UPDATE,
+    buttonType: buttonType.NUMBER,
+    display: "0",
+    size: buttonSize.LARGE
+  },
+  {
+    buttonType: buttonType.OPERATOR,
     display: "=",
     size: buttonSize.DEFAULT
   }

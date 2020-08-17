@@ -1,15 +1,24 @@
 import styled from 'styled-components';
 import fonts from '../fonts';
 
-export const DisplayInputStyled = styled.input`
+export const DisplayStyled = styled.div`
+  align-items: flex-end;
   background: transparent;
   border: 0;
   display: flex;
+  flex-direction: column;
+  font-family: ${fonts.roboto};
   height: 120px;
-  align-items: center;
+  justify-content: space-evenly;
   text-align: right;
-  padding: 0 20px;
-  font-family: ${fonts.cedarville};
-  font-size: 40px;
+  padding: 10px 20px;
   width: 400px;
+`;
+
+export const TopStyled = styled.div`
+  font-size: 20px;
+`;
+
+export const BottomStyled = styled.div`
+  font-size: 32px;
 `;
